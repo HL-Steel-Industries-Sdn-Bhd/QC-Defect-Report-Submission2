@@ -111,7 +111,7 @@ document.getElementById('submitBtn').addEventListener('click', async () => {
   data.imageBase64 = await blobToBase64(imageBlob);
 
   try {
-    const resp = await fetch("YOUR_GAS_WEB_APP_URL", {
+    const resp = await fetch("https://script.google.com/macros/s/AKfycbx8hU9lV7Lp3WwMxAD3chNg8r3gep_lITVvSho8z3GIw4EQUt6lyAWdbh5sgVLSsPqW/exec", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
