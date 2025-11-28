@@ -80,7 +80,7 @@ function blobToBase64(blob) {
 document.getElementById('takePhotoBtn').addEventListener('click', async () => {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({
-      video: { facingMode: { "environment" } } // 后置摄像头
+      video: { facingMode: "environment" } // 后置摄像头
     });
     const track = stream.getVideoTracks()[0];
     const imageCapture = new ImageCapture(track);
